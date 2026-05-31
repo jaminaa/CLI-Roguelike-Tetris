@@ -47,7 +47,7 @@ module Progression =
 
 
     let getStageRequirements stage =
-        let linesNeeded = 20 + (stage * 10)
+        let linesNeeded = 15 + (stage * 5)
         let speed = 1000.0 * (0.8 ** float (stage - 1))
         (linesNeeded, speed)
 
