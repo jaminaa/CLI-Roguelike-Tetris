@@ -1,0 +1,7 @@
+leaderboard.json
+savegame.json
+
+bin/
+obj/
+
+.fake
