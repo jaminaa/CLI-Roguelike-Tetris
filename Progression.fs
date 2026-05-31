@@ -47,9 +47,9 @@ module Progression =
 
 
     let getStageRequirements stage =
-        let linesNeeded = 1 + (stage * 0)
+        let linesNeeded = 20 + (stage * 10)
         let speed = 1000.0 * (0.8 ** float (stage - 1))
-        (linesNeeded, max 40.0 speed)
+        (linesNeeded, speed)
 
     let isStageComplete (state: GameState) =
         state.LinesClearedInStage >= state.LinesRequiredForNextStage
